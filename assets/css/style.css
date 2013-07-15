@@ -11,6 +11,9 @@
 .button-base:hover {
   text-decoration: none;
 }
+.center {
+  margin: 0px auto;
+}
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -158,6 +161,21 @@ h2 {
 #process h2 {
   color: #458bb1;
 }
+#process .intro-copy {
+  text-align: center;
+  font-size: 1.2em;
+}
+#process .process-copy {
+  height: 9em;
+  text-align: center;
+}
+#process .process-copy p {
+  font-size: 1em;
+}
+#process .process-copy h3 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
 #process .process-icon {
   background: #458bb1;
   text-align: center;
@@ -174,4 +192,44 @@ h2 {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+#process .circle-nav ul {
+  margin-left: 0;
+  display: block;
+}
+#process .circle-nav li {
+  width: 16.6%;
+  text-align: center;
+  float: left;
+  outline: none;
+  list-style-type: none;
+  margin: 0;
+}
+#process .circle-nav a {
+  background: #899199;
+  text-align: center;
+  display: block;
+  color: white;
+  width: 60px;
+  height: 60px;
+  font-size: 2.1em;
+  outline: none;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#process .circle-nav a:hover {
+  text-decoration: none;
+  background-color: #484549;
+}
+#process .circle-nav .ui-state-active a {
+  text-decoration: none;
+  outline: none;
+  background-color: #484549;
 }

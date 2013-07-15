@@ -34,8 +34,7 @@
 
                 <div class="row">
                     <div class="vimeo_embed">
-                        <iframe src="http://player.vimeo.com/video/69901302" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                    </div>
+<iframe src="http://player.vimeo.com/video/60202428" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>                    </div>
                 </div>
 
                 <div class="row buttons">
@@ -51,9 +50,9 @@
                     <div class="flame"><span aria-hidden="true" class="icon-flame"></span></div>
 
                     <h2>About</h2>
-                    <p>We are a rather small operation, but we think big. Our team has the talent and drive to tackle projects of any size. If you're interested in joining our team, feel free to give a <a href="#">holler</a>. Growing steadily since May 2012.</p>
+                    <p class="grid-5 float-center">We are a rather small operation, but we think big. Our team has the talent and drive to tackle projects of any size. If you're interested in joining our team, feel free to give a <a href="#">holler</a>. Growing steadily since May 2012.</p>
 
-                    <div class="grid-3 teamNav">
+                    <div class="grid-two-thirds teamNav">
                         <ul>
                             <li>
                                 <a href="#jeremy">
@@ -74,11 +73,11 @@
                         </ul>
                     </div>
 
-                    <div class="grid-3 team">
+                    <div class="grid-third team">
                         <div id="jeremy">
                             <h3>Jeremy Wick</h3>
                             <span>Founder / Creative Director</span>
-                            <p>Founder / Creative Director - Jeremy handles all the business, content development, and animation. He has been known to give up full nights of sleep, in order to make clients happy. He has a degree in Business Administration from Vanguard University.</p>
+                            <p>Jeremy handles all the business, content development, and animation. He has been known to give up full nights of sleep, in order to make clients happy. He has a degree in Business Administration from Vanguard University.</p>
                         </div>
 
                          <div id="ryan">
@@ -95,33 +94,23 @@
                     </div>
                 </div>
 
-            <div class="row links">
-                <div class="grid-2 offset-2">
+                <div class="grid-2 offset-2 links">
                     <a href="#process" target="_self">Process <span aria-hidden="true" class="icon-chevron-down"></span></a>
                 </div>
-            </div>
 
             </div>
         </section>
 
         <section id="process" class="triangle">
             <div class="container">
-                <div class="row">
                     <div class="process-icon"><span aria-hidden="true" class="icon-process"></span></div>
 
                     <h2>Process</h2>
 
-                    <p>We make graphically animated videos for businesses of all kinds. Our videos incorporate the key elements of story, design, and sound.</p>
+                    <p class="grid-5 float-center intro-copy">We make graphically animated videos for businesses of all kinds. Our videos incorporate the key elements of story, design, and sound.</p>
 
-                    <ul>
-                        <li><a href="#research">Research & Strategy</a></li>
-                        <li><a href="#script">Script</a></li>
-                        <li><a href="#storyboard">Storyboard</a></li>
-                        <li><a href="#voiceover">Voiceover</a></li>
-                        <li><a href="#animation">Animation</a></li>
-                        <li><a href="#music">Music & Sound</a></li>
-                    </ul>
-
+                  
+                <div class="grid-4 offset-1 process-copy">
                     <div id="research">
                         <h3>Research & Strategy</h3>
                         <p>We learn everything we can about your company: What you offer. Your target market. Why people need you. With this information, we determine the best strategy for your video in terms of length, style, and distribution.</p>
@@ -148,9 +137,21 @@
                         <p>We add high quality music and sound effects to the video that help tell the story and engage with the audience. Every musical score is designed to convey the mood of the video, while every sound effect is carefully chosen and timed in order to bring the video to life.</p>
                     </div>
                 
-                
                 </div>
-            </div>
+
+                <div class="row"></div>
+
+                <div class="grid-5 float-center circle-nav">
+                  <ul>
+                        <li><a href="#research"><span aria-hidden="true" class="icon-flame"></span></a></li>
+                        <li><a href="#script"><span aria-hidden="true" class="icon-file-text"></span></a></li>
+                        <li><a href="#storyboard"><span aria-hidden="true" class="icon-th-large"></span></a></li>
+                        <li><a href="#voiceover"><span aria-hidden="true" class="icon-microphone"></span></a></li>
+                        <li><a href="#animation"><span aria-hidden="true" class="icon-film"></span></a></li>
+                        <li><a href="#music"><span aria-hidden="true" class="icon-music"></span></a></li>
+                    </ul>
+                </div>
+                </div>
         </section>
 
         <section id="work">
@@ -175,10 +176,19 @@
                     <span aria-hidden="true" class="icon-linkedin"></span>
                     <span aria-hidden="true" class="icon-facebook"></span>
                     <span aria-hidden="true" class="icon-flame"></span>
+                    <span aria-hidden="true" class="icon-play"></span>
                     <span aria-hidden="true" class="icon-twitter"></span>
                     <span aria-hidden="true" class="icon-vimeo"></span>
                     <span aria-hidden="true" class="icon-process"></span>
+                    <span aria-hidden="true" class="icon-instagram"></span>
+                    <span aria-hidden="true" class="icon-film"></span>
+                    <span aria-hidden="true" class="icon-microphone"></span>
+                    <span aria-hidden="true" class="icon-music"></span>
+                    <span aria-hidden="true" class="icon-file-text"></span>
                     <span aria-hidden="true" class="icon-chevron-down"></span>
+                    <span aria-hidden="true" class="icon-arrow-left"></span>
+                    <span aria-hidden="true" class="icon-untitled"></span>
+                    <span aria-hidden="true" class="icon-th-large"></span>
 
 <p>info@wickvideo.com | 831.431.3676<br />
 2525 Santa Catalina Dr. #205 | Costa Mesa, CA 92626
@@ -194,9 +204,12 @@
                     event: "mouseover"
                 });
             });
+
+
             $(function() {
                 $( "#process" ).tabs({
-                    event: "mouseover"
+                    event: "mouseover",
+                    show: { effect: "fade", duration: 800 }
                 });
             });
         </script>

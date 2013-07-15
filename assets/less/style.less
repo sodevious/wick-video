@@ -8,6 +8,8 @@
 @darkBlue: #458BB1;
 @lightRed: #F3566D;
 @medRed: #EF2A4B;
+@lightGray: #899199;
+@darkGrey: #484549;
 
 
 // General
@@ -132,11 +134,24 @@ h2 {
 }
 
 #process {
-h2 {
-		color: @darkBlue;
+	h2 { color: @darkBlue; }
+	.intro-copy {
+		text-align: center;
+		font-size: 1.2em;
 	}
+	.process-copy {
+		height: 9em;
+		text-align: center;
+		p { font-size: 1em; }
+		h3 {
+			font-weight: 700;
+			margin-bottom: 0.5em;
+		}
+		div {
 
-		.process-icon {
+		}
+	}
+	.process-icon {
 		background: @darkBlue;
 		text-align: center;
 		display: block;
@@ -148,8 +163,45 @@ h2 {
 		margin-bottom: 50px;
 		.border-radius(60px);
 	}
+	.circle-nav {
+		ul { margin-left: 0; display: block; }
+
+		li {
+			width: 16.6%;
+			text-align: center;
+			float: left;
+			outline: none;
+			list-style-type: none;
+			margin: 0;
+
+		}
+
+		a {
+			background: @lightGray;
+			text-align: center;
+			display: block;
+			color: white;
+			width: 60px;
+			height: 60px;
+			font-size: 2.1em;
+			outline: none;
+			margin: 0px auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			.border-radius(60px);
+			&:hover { text-decoration: none; background-color: @darkGrey;}
+		}
+
+		.ui-state-active a { 
+			text-decoration: none; 
+			outline: none;
+			background-color: @darkGrey;
+
+		}
 
 
+		
+	}
 }
 
 #work {
