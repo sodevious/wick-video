@@ -45,6 +45,49 @@ h2 {
 .triangle:first-child {
   background-image: url("../img/triangles.png");
 }
+.circle {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.intro-copy {
+  text-align: center;
+  font-size: 1.2em;
+}
+.links a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  padding: 6px 0;
+  text-align: center;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background: #7ab6d3;
+  background-color: #f3566d;
+  margin: 0px auto;
+  width: 50%;
+  margin-top: 30px;
+}
+.links a:hover {
+  text-decoration: none;
+}
+.links a:hover {
+  background: #f0304c;
+  text-decoration: none;
+}
+.links a span {
+  margin-left: 5px;
+}
 #intro .logo {
   text-align: center;
 }
@@ -95,6 +138,9 @@ h2 {
   background: #5ba5c9;
   text-decoration: none;
 }
+#intro .buttons a span {
+  margin-left: 5px;
+}
 #about {
   background: white;
 }
@@ -117,38 +163,24 @@ h2 {
   width: 33%;
   float: left;
 }
-#about .team span {
+#about .teamNav ul li img {
+  opacity: 0.5;
+}
+#about .teamNav .ui-tabs-active img {
+  opacity: 1;
+}
+#about .teamBio {
+  margin-top: 1em;
+}
+#about .teamBio span {
   font-style: italic;
 }
-#about .links a {
-  display: block;
-  color: white;
-  font-size: 18px;
-  padding: 6px 0;
-  text-align: center;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
-  background: #7ab6d3;
-  background-color: #f3566d;
-  margin: 0px auto;
-  width: 50%;
-  margin-top: 30px;
-}
-#about .links a:hover {
-  text-decoration: none;
-}
-#about .links a:hover {
-  background: #f0304c;
-  text-decoration: none;
-}
-#about .flame {
-  background: #ef2a4b;
+#about .flame-icon {
   text-align: center;
   display: block;
   color: white;
   width: 120px;
   height: 120px;
-  font-size: 70px;
   margin: 0px auto;
   margin-bottom: 50px;
   -webkit-border-radius: 60px;
@@ -157,13 +189,11 @@ h2 {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  background: #ef2a4b;
+  font-size: 70px;
 }
 #process h2 {
   color: #458bb1;
-}
-#process .intro-copy {
-  text-align: center;
-  font-size: 1.2em;
 }
 #process .process-copy {
   height: 9em;
@@ -177,13 +207,11 @@ h2 {
   margin-bottom: 0.5em;
 }
 #process .process-icon {
-  background: #458bb1;
   text-align: center;
   display: block;
   color: white;
   width: 120px;
   height: 120px;
-  font-size: 70px;
   margin: 0px auto;
   margin-bottom: 50px;
   -webkit-border-radius: 60px;
@@ -192,6 +220,8 @@ h2 {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  background: #458bb1;
+  font-size: 70px;
 }
 #process .circle-nav ul {
   margin-left: 0;
@@ -232,4 +262,38 @@ h2 {
   text-decoration: none;
   outline: none;
   background-color: #484549;
+}
+#work h2 {
+  color: #ef2a4b;
+}
+#work .play-icon {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #ef2a4b;
+  font-size: 48px;
+  line-height: 2.4em;
+}
+#work .arrows span {
+  text-align: center;
+  margin-top: 100%;
+  font-size: 80px;
+  display: block;
+}
+#work .arrows a {
+  color: #cadeea;
+}
+#work .arrows a:hover {
+  text-decoration: none;
+  color: #7ab6d3;
 }

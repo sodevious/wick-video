@@ -1,6 +1,6 @@
 @import "mixins.less";
 
-// * { background: rgba(0,0,0,0.1); }
+//* { background: rgba(0,0,0,0.1); }
 
 // Variables
 @lightBlue: #cadeea;
@@ -43,6 +43,37 @@ h2 {
 	}
 }
 
+.circle {
+	text-align: center;
+	display: block;
+	color: white;
+	width: 120px;
+	height: 120px;
+	margin: 0px auto;
+	margin-bottom: 50px;
+	.border-radius(60px);
+}
+
+.intro-copy {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.links a {
+	.button-base;
+	background-color: @lightRed;
+	margin: 0px auto;
+	width: 50%;
+	margin-top: 30px;
+	&:hover {
+		background: darken(@lightRed, 8%);
+		text-decoration: none;
+	}
+	span {
+		margin-left: 5px;
+	}
+}
+
 
 // Styles
 #intro {
@@ -80,15 +111,16 @@ h2 {
 				background: darken(@medBlue, 8%);
 				text-decoration: none;
 			}
+			span {
+			margin-left: 5px;
+		}
 		}
 	}
 }
 
 #about {
 	background: white;
-	h2 {
-		color: @medRed;
-	}
+	h2 { color: @medRed; }
 	h3 {
 		font-weight: 500;
 		margin-bottom: 4px;
@@ -104,41 +136,28 @@ h2 {
 				text-align: center;
 				width: 33%;
 				float: left;
+				img { opacity: 0.5; }
 			}
 		}
-	}
-	.team span { font-style: italic; }
-	.links a {
-		.button-base;
-		background-color: @lightRed;
-		margin: 0px auto;
-		width: 50%;
-		margin-top: 30px;
-		&:hover {
-			background: darken(@lightRed, 8%);
-			text-decoration: none;
+
+		.ui-tabs-active img {
+			opacity: 1;
 		}
 	}
-	.flame {
+	.teamBio {
+		margin-top: 1em;
+		span { font-style: italic; }
+	}
+	
+	.flame-icon {
+		.circle;
 		background: @medRed;
-		text-align: center;
-		display: block;
-		color: white;
-		width: 120px;
-		height: 120px;
 		font-size: 70px;
-		margin: 0px auto;
-		margin-bottom: 50px;
-		.border-radius(60px);
 	}
 }
 
 #process {
 	h2 { color: @darkBlue; }
-	.intro-copy {
-		text-align: center;
-		font-size: 1.2em;
-	}
 	.process-copy {
 		height: 9em;
 		text-align: center;
@@ -147,21 +166,11 @@ h2 {
 			font-weight: 700;
 			margin-bottom: 0.5em;
 		}
-		div {
-
-		}
 	}
 	.process-icon {
+		.circle;
 		background: @darkBlue;
-		text-align: center;
-		display: block;
-		color: white;
-		width: 120px;
-		height: 120px;
-		font-size: 70px;
-		margin: 0px auto;
-		margin-bottom: 50px;
-		.border-radius(60px);
+		font-size: 70px;	
 	}
 	.circle-nav {
 		ul { margin-left: 0; display: block; }
@@ -196,15 +205,31 @@ h2 {
 			text-decoration: none; 
 			outline: none;
 			background-color: @darkGrey;
-
 		}
-
-
-		
 	}
 }
 
 #work {
-
-
+	h2 { color: @medRed; }
+	.play-icon {
+		.circle;
+		background: @medRed;
+		font-size: 48px;
+		line-height: 2.4em;
+	}
+	.arrows {
+		 span {
+			text-align: center;
+			margin-top: 100%;
+			font-size: 80px;
+			display: block;
+		}
+		a {
+			color: @lightBlue;
+			&:hover {
+				text-decoration: none;
+				color: @medBlue;
+			}
+		}
+	}
 }
