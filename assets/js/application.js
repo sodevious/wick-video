@@ -17,8 +17,6 @@ $(function() {
         margin: 10,
         visible: 2,
         step: 2,
-     width: 295,
-     height: 350
     });
 
     $( "#ui-carousel-next" )
