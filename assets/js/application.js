@@ -16,7 +16,7 @@ $(function() {
     $( "#carousel ").rcarousel({
         margin: 10,
         visible: 2,
-        step: 2,
+        step: 2
     });
 
     $( "#ui-carousel-next" )

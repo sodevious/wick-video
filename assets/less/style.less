@@ -108,6 +108,7 @@ h2 {
 	.vimeo_embed {
 		display: block;
 		//max-width: 65%;
+
 		margin: 0px auto;
 
 		iframe {
@@ -179,7 +180,7 @@ h2 {
 #process {
 	h2 { color: @darkBlue; }
 	.process-copy {
-		height: 11em;
+		height: 9em;
 		text-align: center;
 		p { font-size: 1em; }
 		h3 {
@@ -237,19 +238,7 @@ h2 {
 		font-size: 48px;
 		line-height: 2.4em;
 	}
-	#carousel {
-		background: pink;
-		//width: 100%;
-		.video {
-			background: red;
-			width: 100%;
-			img {
-				width: 100%;
-			}
-		}
-	}
 	.arrows {
-		display: none;
 		 span {
 			text-align: center;
 			margin-top: 100%;
@@ -272,20 +261,9 @@ h2 {
 @media (min-width: 30em) {
 	* { background: rgba(255,0,0,0.1); }
 	.videoWrapper { padding-bottom: 54%; }
-
-	#work .arrows {
-		display: block;
-	}
-
-	#work #carousel .video {
-		width: 45%;
-		float: left;
-	}
 }
 
 @media (min-width: 50em) {
-
-
 * { background: rgba(255,255,0,0.1); }
 
 	#intro .vimeo_embed {
@@ -303,16 +281,12 @@ h2 {
 			height: 60px;
 			font-size: 2em;
 			outline: none;
-			line-height: 1.8em;
+			line-height: 2.8em;
 			margin: 0px auto;
 			margin-top: 20px;
 			margin-bottom: 20px;
 			.border-radius(50px);
 }
 
-	}
-
-	#process 	.process-copy {
-		height: 9em;
 	}
 }

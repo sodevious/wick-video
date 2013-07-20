@@ -181,7 +181,6 @@ a:hover, a:active {
 
 /*  6-column grid  */
 @media (min-width: 40em) {
-
     .grid-1 {
         width: 13.636363636364%;
     }

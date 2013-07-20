@@ -224,7 +224,7 @@ h2 {
   color: #458bb1;
 }
 #process .process-copy {
-  height: 11em;
+  height: 9em;
   text-align: center;
 }
 #process .process-copy p {
@@ -313,19 +313,6 @@ h2 {
   font-size: 48px;
   line-height: 2.4em;
 }
-#work #carousel {
-  background: pink;
-}
-#work #carousel .video {
-  background: red;
-  width: 100%;
-}
-#work #carousel .video img {
-  width: 100%;
-}
-#work .arrows {
-  display: none;
-}
 #work .arrows span {
   text-align: center;
   margin-top: 100%;
@@ -346,13 +333,6 @@ h2 {
   .videoWrapper {
     padding-bottom: 54%;
   }
-  #work .arrows {
-    display: block;
-  }
-  #work #carousel .video {
-    width: 45%;
-    float: left;
-  }
 }
 @media (min-width: 50em) {
   * {
@@ -371,7 +351,7 @@ h2 {
     height: 60px;
     font-size: 2em;
     outline: none;
-    line-height: 1.8em;
+    line-height: 2.8em;
     margin: 0px auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -381,8 +361,5 @@ h2 {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-  }
-  #process .process-copy {
-    height: 9em;
   }
 }
