@@ -14,9 +14,6 @@
 .center {
   margin: 0px auto;
 }
-* {
-  background: rgba(0, 0, 0, 0.1);
-}
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -126,9 +123,6 @@ h2 {
 }
 #intro .vimeo_embed iframe {
   padding: 6px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -136,11 +130,20 @@ h2 {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 #intro .buttons {
   margin: 30px 0px;
 }
 #intro .buttons a {
+  width: 49%;
+  float: left;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   color: white;
   font-size: 18px;
@@ -149,12 +152,6 @@ h2 {
   border-right: 1px solid gray;
   border-bottom: 1px solid gray;
   background: #7ab6d3;
-  float: left;
-  width: 49%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
 }
 #intro .buttons a:hover {
   text-decoration: none;
@@ -188,7 +185,7 @@ h2 {
 #about .teamNav ul li {
   list-style-type: none;
   text-align: center;
-  width: 33%;
+  width: 33.333%;
   float: left;
 }
 #about .teamNav ul li img {
@@ -315,8 +312,8 @@ h2 {
 }
 #work .arrows span {
   text-align: center;
-  margin-top: 100%;
-  font-size: 80px;
+  font-size: 50px;
+  padding: 20px;
   display: block;
 }
 #work .arrows a {
@@ -326,18 +323,97 @@ h2 {
   text-decoration: none;
   color: #7ab6d3;
 }
+#connect h2 {
+  color: #458bb1;
+}
+#connect .flame-icon {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #458bb1;
+  font-size: 70px;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 120px;
+  height: 120px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #899199;
+  font-size: 31px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+footer a:hover {
+  background: #ef2a4b;
+  text-decoration: none;
+  color: white;
+}
+li.rs-carousel-item {
+  width: 200px;
+  background: red;
+  margin: 10px;
+  list-style-type: none;
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+}
 @media (min-width: 30em) {
-  * {
-    background: rgba(255, 0, 0, 0.1);
-  }
   .videoWrapper {
     padding-bottom: 54%;
   }
+  #work .arrows span {
+    text-align: center;
+    font-size: 80px;
+    display: block;
+    margin-top: 1.4em;
+  }
+}
+@media (min-width: 30em) and (max-width: 50em) {
+  #about .teamNav {
+    width: 97%;
+    background: red;
+    text-align: center;
+  }
+  #about .teamBio {
+    background: green;
+    width: 97%;
+  }
+  .links a {
+    width: 100%;
+  }
 }
 @media (min-width: 50em) {
-  * {
-    background: rgba(255, 255, 0, 0.1);
-  }
   #intro .vimeo_embed {
     display: block;
     max-width: 65%;
@@ -351,7 +427,7 @@ h2 {
     height: 60px;
     font-size: 2em;
     outline: none;
-    line-height: 2.8em;
+    line-height: 1.8em;
     margin: 0px auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -361,5 +437,8 @@ h2 {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+  }
+  #process .process-copy {
+    height: 10em;
   }
 }

@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="assets/css/kraken.css" type="text/css">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <link rel="stylesheet" href="assets/css/fonts.css" type="text/css">
-        <link rel="stylesheet" href="assets/css/rcarousel.css" type="text/css">
+
+        <link rel="stylesheet" href="assets/css/jquery.rs.carousel.css" type="text/css">
 
         <!-- HTML5 Shim for IE 6-8 -->
         <!--[if lt IE 9]>
@@ -21,7 +22,15 @@
         <![endif]-->
 
         <link rel="shortcut icon" type="image/ico" href="assets/img/favicon.ico">
+<script src="assets/js/jquery-1.9.1.js"></script>
+        <script src="assets/js/jquery.ui.widget.min.js"></script>
+        <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
 
+        <script src="assets/js/jquery.event.drag.js"></script>
+        <script src="assets/js/jquery.rs.carousel.js"></script>
+        <script src="assets/js/jquery.rs.carousel-touch.js"></script>
+
+        <script src="assets/js/application.js"></script>
     </head>
 
     <body>
@@ -167,36 +176,47 @@
                 <h2>Work</h2>
 
                 <div class="row">
-                    <div class="grid-1 arrows">
-                        <a href="#" id="ui-carousel-prev"><span aria-hidden="true" class="icon-arrow-left"></span></a>
+                    <div class="grid-1 arrows prev">
                     </div>
-                    <div id="carousel" class="grid-4">
-                        <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/video.png" />
-                        </div>
-                        <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/ryan.png" />
-                        </div>
-                        <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/ryan.png" />
-                        </div>  <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/video.png" />
-                        </div>  <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/video.png" />
-                        </div>
-                        <div class="video">
-                            <img src="assets/img/video.png" />
-                            <img src="assets/img/video.png" />
-                        </div>
-                    </div>
-                    <div class="grid-1 arrows">
-                        <a href="#" id="ui-carousel-next"><span aria-hidden="true" class="icon-untitled"></span></a>
-                    </div>
+<div class="grid-4">
+                        <div class="rs-carousel">
+    <ul>
+        <li>
+            <img src="assets/img/ryan.png" />
+        </li>
+        <li>
+            <img src="assets/img/video.png" />
+        </li>
+        <li>
+werwerewr        </li>
+        <li>
+            werwerewr
+
+        </li>       <li>
+            <img src="assets/img/ryan.png" />
+        </li>
+        <li>
+            <img src="assets/img/video.png" />
+        </li>
+        <li>
+            <img src="assets/img/ryan.png" />
+        </li>
+        <li>
+            <img src="assets/img/ryan.png" />
+
+        </li>
+     
+    </ul>
+</div>
+</div>
+
+
+<div class="grid-1 arrows next">
+
+
+
+
+</div>
                 </div>
 
                 <div class="grid-2 offset-2 links">
@@ -208,39 +228,51 @@
         <section id="connect" class="triangle">
             <div class="container">
                 <div class="row">
+                    <div class="flame-icon"><span aria-hidden="true" class="icon-flame"></span></div>
+
                     <h2>Connect</h2>
                 </div>
             </div>
         </section>
 
         <footer class="container">
-            <span aria-hidden="true" class="icon-youtube"></span>
-            <span aria-hidden="true" class="icon-linkedin"></span>
-            <span aria-hidden="true" class="icon-facebook"></span>
-            <span aria-hidden="true" class="icon-flame"></span>
-            <span aria-hidden="true" class="icon-play"></span>
-            <span aria-hidden="true" class="icon-twitter"></span>
-            <span aria-hidden="true" class="icon-vimeo"></span>
-            <span aria-hidden="true" class="icon-process"></span>
-            <span aria-hidden="true" class="icon-instagram"></span>
-            <span aria-hidden="true" class="icon-film"></span>
-            <span aria-hidden="true" class="icon-microphone"></span>
-            <span aria-hidden="true" class="icon-music"></span>
-            <span aria-hidden="true" class="icon-file-text"></span>
+            <div class="grid-6">
+            <a href="#"><span aria-hidden="true" class="icon-twitter"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-facebook"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-instagram"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-linkedin"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-vimeo"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-youtube"></span></a>
+            
+
+            <!-- 
+            <a href="#"><span aria-hidden="true" class="icon-flame"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-play"></span></a>
+            <a href="#"><span aria-hidden="true" class="icon-process"></span></a>
+
+
+            <a href="#"><span aria-hidden="true" class="icon-film"></span>
+            <a href="#"><span aria-hidden="true" class="icon-microphone"></span>
+            <a href="#"><span aria-hidden="true" class="icon-music"></span>
+            <a href="#"><span aria-hidden="true" class="icon-file-text"></span>
             <span aria-hidden="true" class="icon-chevron-down"></span>
             <span aria-hidden="true" class="icon-arrow-left"></span>
             <span aria-hidden="true" class="icon-untitled"></span>
             <span aria-hidden="true" class="icon-th-large"></span>
 
-<p>info@wickvideo.com | 831.431.3676<br />
-2525 Santa Catalina Dr. #205 | Costa Mesa, CA 92626
-</p>
+        -->
+
+
+        </div>
+
+
+            <p>
+                info@wickvideo.com | 831.431.3676<br />
+                2525 Santa Catalina Dr. #205 | Costa Mesa, CA 92626
+            </p>
         </footer>
         
         <script src="assets/js/kraken.js"></script>
-        <script src="assets/js/jquery-1.9.1.js"></script>
-        <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script src="assets/js/jquery.ui.rcarousel.min.js"></script>
-        <script src="assets/js/application.js"></script>
+        
     </body>
 </html>

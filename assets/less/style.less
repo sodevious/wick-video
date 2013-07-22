@@ -1,7 +1,5 @@
 @import "mixins.less";
 
-* { background: rgba(0,0,0,0.1); }
-
 // Variables
 @lightBlue: #cadeea;
 @medBlue: #7AB6D3;
@@ -56,7 +54,6 @@ h2 {
 		background-image: url("../img/triangles.png");
 	}
 }
-
 .circle {
 	text-align: center;
 	display: block;
@@ -67,12 +64,10 @@ h2 {
 	margin-bottom: 50px;
 	.border-radius(60px);
 }
-
 .intro-copy {
 	text-align: center;
 	font-size: 1.2em;
 }
-
 .links a {
 	.button-base;
 	background-color: @lightRed;
@@ -83,9 +78,7 @@ h2 {
 		background: darken(@lightRed, 8%);
 		text-decoration: none;
 	}
-	span {
-		margin-left: 5px;
-	}
+	span { margin-left: 5px; }
 }
 
 
@@ -107,30 +100,27 @@ h2 {
 	}
 	.vimeo_embed {
 		display: block;
-		//max-width: 65%;
-
 		margin: 0px auto;
 
 		iframe {
 			padding: 6px;
-			.box-sizing(border-box);
 			background: white;
 			.border-radius(4px); 
+			.box-sizing(border-box);
 		}
 	}
 	.buttons {
 		margin: 30px 0px;
 		a {
-			.button-base;
-			float: left;
 			width: 49%;
-			.box-sizing(border-box);
+			float: left;
 			display: inline-block;
-
+			.box-sizing(border-box);
+			.button-base;
+			
 			span { margin-left: 5px; }
-			&:last-child {
-				margin-left: 2%;
-			}
+			
+			&:last-child { margin-left: 2%; }
 			&:hover {
 				background: darken(@medBlue, 8%);
 				text-decoration: none;
@@ -139,6 +129,7 @@ h2 {
 	}
 }
 
+// About Section
 #about {
 	background: white;
 	h2 { color: @medRed; }
@@ -155,21 +146,17 @@ h2 {
 			li {
 				list-style-type: none;
 				text-align: center;
-				width: 33%;
+				width: 33.333%;
 				float: left;
 				img { opacity: 0.5; }
 			}
 		}
-
-		.ui-tabs-active img {
-			opacity: 1;
-		}
+		.ui-tabs-active img { opacity: 1; }
 	}
 	.teamBio {
 		margin-top: 1em;
 		span { font-style: italic; }
 	}
-	
 	.flame-icon {
 		.circle;
 		background: @medRed;
@@ -177,6 +164,8 @@ h2 {
 	}
 }
 
+
+// Process Section
 #process {
 	h2 { color: @darkBlue; }
 	.process-copy {
@@ -230,6 +219,8 @@ h2 {
 	}
 }
 
+
+// Work Section
 #work {
 	h2 { color: @medRed; }
 	.play-icon {
@@ -239,10 +230,11 @@ h2 {
 		line-height: 2.4em;
 	}
 	.arrows {
-		 span {
+		span {
 			text-align: center;
-			margin-top: 100%;
-			font-size: 80px;
+			//margin-top: 100%;
+			font-size: 50px;
+			padding: 20px;
 			display: block;
 		}
 		a {
@@ -255,38 +247,106 @@ h2 {
 	}
 }
 
-.buttons {
+#connect {
+	h2 {
+		color: @darkBlue;
+	}
+	.flame-icon {
+		.circle;
+		background: @darkBlue;
+		font-size: 70px;
+	}
 }
 
+// Footer
+footer {
+	text-align: center;
+	a {
+		.circle;
+		.border-radius(50px);
+		background: @lightGray;
+		font-size: 31px;
+		height: 50px;
+		width: 50px;
+		display: inline-block;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-right: 8px;
+		margin-left: 8px;
+
+		&:hover {
+			background: @medRed;
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+
+li.rs-carousel-item {
+	width: 200px;
+	background: red;
+	margin: 10px;
+	list-style-type: none;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	font-size: 30px;
+}
+
+
+//* { background: rgba(0,0,0,0.1); }
+
+
+// Media Queries
 @media (min-width: 30em) {
-	* { background: rgba(255,0,0,0.1); }
-	.videoWrapper { padding-bottom: 54%; }
+	// * { background: rgba(255,0,0,0.1); }
+	.videoWrapper { padding-bottom: 54%; }	
+
+	#work .arrows {
+		span {
+			text-align: center;
+			//margin-top: 100%;
+			font-size: 80px;
+			display: block;
+			margin-top: 1.4em;
+		}
+	}
 }
-
+@media (min-width: 30em) and (max-width: 50em)  {
+	// * { background: rgba(255,0,255,0.1); }
+	#about {
+		.teamNav {
+			width: 97%;
+			background: red;
+			text-align: center;
+		}
+		.teamBio {
+			background: green;
+			width: 97%;
+		}
+	}
+	.links a { width: 100%; }
+}
 @media (min-width: 50em) {
-* { background: rgba(255,255,0,0.1); }
-
+	// * { background: rgba(255,255,0,0.1); }
 	#intro .vimeo_embed {
 		display: block;
 		max-width: 65%;
-		}
-
-#process .circle-nav {
-		a {
-			background: @lightGray;
-			text-align: center;
-			display: block;
-			color: white;
-			width: 60px;
-			height: 60px;
-			font-size: 2em;
-			outline: none;
-			line-height: 2.8em;
-			margin: 0px auto;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			.border-radius(50px);
-}
-
 	}
+	#process .circle-nav a {
+		background: @lightGray;
+		text-align: center;
+		display: block;
+		color: white;
+		width: 60px;
+		height: 60px;
+		font-size: 2em;
+		outline: none;
+		line-height: 1.8em;
+		margin: 0px auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.border-radius(50px);
+	}
+	#process .process-copy { height: 10em; }
 }
